@@ -1,1 +1,1 @@
-**Rewritting homepage of JD.com is for examining mastering of HTML&CSS part**
+**Rewriting homepage of JD.com is for examining mastering of HTML&CSS part**
