@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: #f6f6f6; /*整个页面的背景颜色*/
 }
 
 header{
@@ -8,8 +13,54 @@ header{
     background-color: black;
 }
 
-#topADBanner{
+.loadPageCenter{
     width: 1190px;
     margin: auto;
+}
+
+.nav_header{
+    height: 30px; /*没有高度撑开，不会显示*/
+    line-height: 30px; /*行高=容器高，可以使字体居中*/
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px; /*导航栏中字体大小*/
+    color: #999; /*字体颜色*/
+}
+
+.fl{
+    float: left;
+    margin-left: 200px;
+}
+
+.fr{
+    float: right;
+    position: absolute;
+    right: 50px;
+}
+
+.fr li{
+    float: left;
+}
+
+
+a{
+    text-decoration: none;
+    color: #999; /*字体颜色*/
+}
+
+a:hover{
+    color: red;
+}
+
+.f10{
+    color: red;
+}
+/* 标红公用 */
+
+.space{ /*间隔的小竖线*/
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin:10px 12px 0;
 }
 
