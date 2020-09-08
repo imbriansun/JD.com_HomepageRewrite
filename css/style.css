@@ -64,3 +64,113 @@ a:hover{
     margin:10px 12px 0;
 }
 
+.header{
+    width: 1190px;
+    position: relative;   
+    margin: 0 auto;
+}
+/* 规定宽度后使用margin为auto自动居中 */
+
+.searchWrap {
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+
+.searchWrap>input{
+    width: 495px;
+    height: 33px;
+    border: 3px solid #f10215;
+    float: left;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.searchWrap>button{
+    width: 45px;
+    height: 39px;
+    background-color: red;
+    border: none;
+    color:white;
+}
+
+.logo {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    box-shadow: 0px -10px 10px rgba(0,0,0,.3);
+}
+
+.logo a {
+    display: block;
+    width: 190px;
+    height: 170px;
+    background: #fff url(../images/logo.png) no-repeat;
+}
+
+.shopCar{
+    height: 39px;
+    width: 150px;
+    /* border-radius: 13px; */
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    right: 100px;
+}
+
+.shopCar>a{
+    color: white;
+    font-size: 14px;
+}
+
+.shopCar span {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 12px;
+    color: red;
+    line-height: 15px;
+}
+
+.hotwords{
+    position: absolute;
+    font-size: 14px;
+    top: 80px;
+    left: 320px;
+}
+
+.nav_midbanner{
+    height: 40px; /*没有高度撑开，不会显示*/
+    width: 770px;
+    position: absolute;
+    left: 230px;
+    top: 115px;
+}
+
+.nav_midbanner li{
+    float: left;
+}
+
+.nav_midbanner li a{
+    margin: 13px;
+    color: #555;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav_midbanner li a:hover{
+    color: red;
+}
+
+.clearfix::after {
+    content:""; 
+    display: block; 
+    clear:both; 
+}
