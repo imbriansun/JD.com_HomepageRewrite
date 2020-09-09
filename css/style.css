@@ -34,9 +34,9 @@ header{
 
 .fr{
     float: right;
-    position: absolute;
-    right: 50px;
 }
+/* 这里position值为默认值static，按照正常文档流顺序 */
+/* 如果position顺序设置成了absolute，right:50px则页面缩放时会重新排版显示全 */
 
 .fr li{
     float: left;
@@ -71,9 +71,25 @@ a:hover{
 }
 /* 规定宽度后使用margin为auto自动居中 */
 
+
+
+.logo {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    box-shadow: 0px -10px 10px rgba(0,0,0,.3);
+}
+/* 由于对header容器使用loadPageCenter进行居中处理 因此这里虽然left:0但居中处理后header的左边界就是logo的左边界 */
+
+
+.logo a {
+    display: block;
+    width: 190px;
+    height: 170px;
+    background: #fff url(../images/logo.png) no-repeat;
+}
+
 .searchWrap {
-    width: 550px;
-    height: 35px;
     position: absolute;
     top: 25px;
     left: 320px;
@@ -96,20 +112,6 @@ a:hover{
     color:white;
 }
 
-.logo {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    box-shadow: 0px -10px 10px rgba(0,0,0,.3);
-}
-
-.logo a {
-    display: block;
-    width: 190px;
-    height: 170px;
-    background: #fff url(../images/logo.png) no-repeat;
-}
-
 .shopCar{
     height: 39px;
     width: 150px;
@@ -119,6 +121,7 @@ a:hover{
     text-align: center;
     top: 25px;
     right: 100px;
+    line-height: 39px;  /* line-height是个好东西 控制文字居中显示 */
 }
 
 .shopCar>a{
@@ -130,7 +133,7 @@ a:hover{
     width: 15px;
     height: 15px;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 50%;     /* border-radius设为50%为圆形  https://www.cnblogs.com/an2333/p/11520832.html */
     position: absolute;
     top: 5px;
     right: 25px;
