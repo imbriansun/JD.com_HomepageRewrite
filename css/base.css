@@ -68,6 +68,7 @@ a:hover{
     width: 1190px;
     position: relative;   
     margin: 0 auto;
+    height: 140px;
 }
 /* 规定宽度后使用margin为auto自动居中 */
 
@@ -102,6 +103,7 @@ a:hover{
     float: left;
     font-size: 14px;
     padding-left: 3px;
+    outline:none;
 }
 
 .searchWrap>button{
@@ -176,4 +178,48 @@ a:hover{
     content:""; 
     display: block; 
     clear:both; 
+}
+
+footer {
+    margin-top: 35px;
+    height: 500px;
+    background-color: #EAEAEA;
+}
+footer a {
+    color: #666;
+}
+.service {
+    padding: 30px 0; 
+    border-bottom: 1px solid #DEDEDE;
+    overflow: hidden;
+}
+.service ul li {
+    width: 297px;
+    height: 43px;
+    position: relative;
+    line-height: 43px;
+    float: left;
+}
+.service  li h5 {
+    position: absolute;
+    top: 0;
+    left: 38px;
+    width: 36px;
+    height: 43px;
+    background: url(../images/ico.png) no-repeat;
+    text-indent: -999em;
+}
+.service  li:nth-child(2) h5 {
+    background-position: 0 -43px;
+}
+.service  li:nth-child(3) h5 {
+    background-position: 0 -86px;
+}
+.service  li:nth-child(4) h5 {
+    background-position: bottom;
+}
+.service  li p {
+    font-weight: 700;
+    margin-left: 82px;
+
 }

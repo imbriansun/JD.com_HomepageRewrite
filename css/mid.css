@@ -1,0 +1,68 @@
+.grid {
+    height: 480px; 
+}
+
+
+.ad{
+    position: fixed;
+    left: -50px;
+    bottom: 0;
+    float: left;
+    width: 250px;
+    height: 480px;
+}
+
+.ad-r {
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    z-index: 999;
+    width: 0;
+    /* 要设置在广告显示时 宽度变化 */
+    height: 480px;
+    background: url(../images/ad-r.jpg);
+    transition: all 0.8s;
+}
+
+.ad:hover .ad-r {  
+    /* 鼠标经过 ad 这个广告大盒子的时候， 里面的这个叫 ad-r的盒子的宽度由0变为 990 */
+    width: 990px;
+}
+
+.grid_col1 {
+    width: 190px;
+    height: 100%;
+    background-color: #6e6568;
+    color: #fff;
+    font-size: 14px;
+}
+
+.grid_col1 ul{
+    padding: 10px 0;
+}
+
+
+.grid_col1 ul li{
+    padding-left: 12px;
+    /*  使用padding而不使用margin原因：因为要做一个鼠标悬浮在某一栏其变色的效果，若使用margin-left会使border
+        到元素边界部分变色不受控制 */
+    height: 29px;
+    line-height: 26px;
+}
+/* 通过height来控制每一行行高进而看到每行行间距不会太小 line-height使文字居中 */
+
+.grid_col1 a{
+    color: #fff;
+    font-size: 14px;  /* 是给链接文字  */
+    margin: 0 3px;
+}
+
+.grid_col1 a:hover{
+    color: red;
+}
+
+
+.grid_col1 ul li:hover {
+    background-color: #9c9698;
+}
+
